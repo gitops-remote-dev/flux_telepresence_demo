@@ -24,8 +24,8 @@ export GITHUB_TOKEN=<your-token>
 
 ```sh
 flux bootstrap github \
-  --owner=cardbinder \
-  --repository=flux \
+  --owner=gitops-remote-dev \
+  --repository=flux_telepresence_demo \
   --team=engineers \
   --path=clusters/develop
 ```
@@ -60,11 +60,11 @@ echo "{\"auths\": {\"ghcr.io\": {\"auth\": \"$(echo "$GITHUB_ACTOR:$GITHUB_TOKEN
 
 ```sh
 cd ../api_gateway
-telepresence intercept api-gateway --port 2300:web --env-file .env.local
+telepresence intercept blue --port 80:web --env-file .env.local
 docker compose up -d
 
 telepresence list
 
-telepresence leave api-gateway
+telepresence leave blue
 docker compose down
 ```
