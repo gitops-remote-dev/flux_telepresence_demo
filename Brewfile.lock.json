@@ -19,6 +19,10 @@
       "fluxcd/tap/flux": {
         "version": "0.24.1",
         "bottle": false
+      },
+      "datawire/blackbird/telepresence": {
+        "version": "2.4.9",
+        "bottle": false
       }
     }
   },
@@ -31,6 +35,14 @@
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.1",
         "macOS": "12.0.1"
+      },
+      "big_sur": {
+        "HOMEBREW_VERSION": "3.3.8",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "d50fec801e7c93e4d6abf002ea98120eed975948",
+        "CLT": "13.0.0.0.1.1630607135",
+        "Xcode": "13.1",
+        "macOS": "11.6.1"
       }
     }
   }

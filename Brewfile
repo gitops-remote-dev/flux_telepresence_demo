@@ -3,5 +3,5 @@
 tap 'datawire/blackbird'
 tap 'fluxcd/tap'
 
-brew 'datawire/blackbird/telepresence-arm64'
+brew 'datawire/blackbird/telepresence'
 brew 'fluxcd/tap/flux'
