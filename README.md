@@ -53,7 +53,7 @@ echo -n $GITHUB_TOKEN | base64
 Update `infrastructure/develop/secrets/registry-auth.yaml` if necessary:
 
 ```sh
-echo "{\"auths\": {\"ghcr.io\": {\"auth\": \"$(echo "$GITHUB_ACTOR:$GITHUB_TOKEN" | base64)\"}}}" | base64
+echo "{\"auths\": {\"docker.pkg.github.com\": {\"auth\": \"$(echo "$GITHUB_ACTOR:$GITHUB_TOKEN" | base64)\"}}}" | base64
 ```
 
 ### Intercept traffic
