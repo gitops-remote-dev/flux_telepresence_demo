@@ -1,0 +1,25 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: api-gateway
+  namespace: default
+spec:
+  interval: 1m
+  secretRef:
+    name: git-auth
+  url: https://github.com/cardbinder/api_gateway
+  ref:
+    branch: develop
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: api-gateway
+  namespace: default
+spec:
+  interval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: api-gateway
+  path: ./deploy/develop
+  prune: true

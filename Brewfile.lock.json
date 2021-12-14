@@ -1,0 +1,37 @@
+{
+  "entries": {
+    "tap": {
+      "datawire/blackbird": {
+        "revision": "f42f81cecc145b0669ba34163dcd433a426f49be"
+      },
+      "fluxcd/tap": {
+        "revision": "200ff2af4b5bb44a4ccccf2b2f7ef27d722f620f"
+      },
+      "homebrew/bundle": {
+        "revision": "44a1e064d0cf9c3ef8d1820be7988f762f222cf5"
+      }
+    },
+    "brew": {
+      "datawire/blackbird/telepresence-arm64": {
+        "version": "2.4.9",
+        "bottle": false
+      },
+      "fluxcd/tap/flux": {
+        "version": "0.24.1",
+        "bottle": false
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "monterey": {
+        "HOMEBREW_VERSION": "3.3.8",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "58bfa5b372c60c932ab58b7f79b6d40cc2ca888b",
+        "CLT": "13.1.0.0.1.1633545042",
+        "Xcode": "13.1",
+        "macOS": "12.0.1"
+      }
+    }
+  }
+}
