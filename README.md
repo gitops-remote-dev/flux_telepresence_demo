@@ -59,7 +59,7 @@ echo "{\"auths\": {\"ghcr.io\": {\"auth\": \"$(echo "$GITHUB_ACTOR:$GITHUB_TOKEN
 ### Intercept traffic
 
 ```sh
-cd ../api_gateway
+cd ../blue
 telepresence intercept blue --port 80:web --env-file .env.local
 docker compose up -d
 
